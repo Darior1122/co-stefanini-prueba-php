@@ -29,7 +29,8 @@ steps:
   inputs:
     SonarCloud: 'co-stefanini-prueba-php'
     organization: 'co-stefanini-prueba-php'
-    scannerMode: 'Other'
+    scannerMode: 'CLI'
+    configMode: 'file'
 
 - task: SonarCloudAnalyze@1
 
