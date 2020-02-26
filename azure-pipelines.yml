@@ -29,9 +29,7 @@ steps:
   inputs:
     SonarCloud: 'co-stefanini-prueba-php'
     organization: 'co-stefanini-prueba-php'
-    scannerMode: 'MSBuild'
-    projectKey: 'co-stefanini-prueba-php'
-    projectName: 'co-stefanini-prueba-php'
+    scannerMode: 'Other'
 
 - task: SonarCloudAnalyze@1
 
