@@ -30,7 +30,10 @@ steps:
     SonarCloud: 'co-stefanini-prueba-php'
     organization: 'co-stefanini-prueba-php'
     scannerMode: 'CLI'
-    configMode: 'file'
+    configMode: 'manual'
+    cliProjectKey: 'co-stefanini-prueba-php'
+    cliProjectName: 'co-stefanini-prueba-php'
+    cliSources: '.'
 
 - task: SonarCloudAnalyze@1
 
