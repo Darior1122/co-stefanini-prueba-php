@@ -25,17 +25,14 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
+- task: SonarCloudAnalyze@1
+
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'co-stefanini-prueba-php'
     organization: 'co-stefanini-prueba-php'
-    scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'co-stefanini-prueba-php'
-    cliProjectName: 'co-stefanini-prueba-php'
-    cliSources: '.'
+    scannerMode: 'Other'
 
-- task: SonarCloudAnalyze@1
 
 - task: SonarCloudPublish@1
   inputs:
