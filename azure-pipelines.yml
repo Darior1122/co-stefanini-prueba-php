@@ -1,4 +1,12 @@
 # PHP
+- task: SonarCloudPrepare@1
+- task: SonarCloudAnalyze@1
+  inputs:
+    SonarCloud: 'co-stefanini-prueba-php'
+    organization: 'co-stefanini-prueba-php'
+    scannerMode: 'MSBuild'
+    projectKey: 'co-stefanini-prueba-php'
+    projectName: 'co-stefanini-prueba-php'
 # Test and package your PHP project.
 # Add steps that run tests, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
