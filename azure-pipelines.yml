@@ -1,3 +1,4 @@
+
 # PHP
 # Test and package your PHP project.
 # Add steps that run tests, save build artifacts, deploy, and more:
@@ -25,20 +26,10 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-
-
-- task: SonarCloudPrepare@1
+- task: SonarQubePrepare@4
   inputs:
-    SonarCloud: 'co-stefanini-prueba-php'
-    organization: 'co-stefanini-prueba-php'
-    scannerMode: 'Other'
+    SonarQube: 'Sonar Qube Stefanini'
+    scannerMode: 'CLI'
+    configMode: 'file'
 
-
-
-- task: SonarCloudPublish@1
-  inputs:
-    pollingTimeoutSec: '300'
-
-- task: SonarCloudAnalyze@1
-
-
+- task: SonarQubeAnalyze@4
