@@ -1,28 +1,5 @@
 {
-    "name": "co-stefanini-prueba-php",
-    "description": "Sample PHP application that uses laravel",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
-    "type": "project",
     "require": {
-        "php": ">=5.5.9",
-        "laravel/framework": "5.2.*",
-        "laravel/socialite": "^2.0",
-        "socialiteproviders/instagram": "^1.1",
-        "socialiteproviders/linkedin": "^1.1",
-        "jrm2k6/cloudder": "^0.2.2",
-        "graham-campbell/github": "^4.2",
-        "thujohn/twitter": "^2.1",
-        "aloha/twilio": "^2.0",
-        "fabpot/goutte": "^3.1",
-        "mjerwin/clockwork-sms": "^0.9.1",
-        "lob/lob-php": "^1.6",
-        "vluzrmos/slack-api": "^0.4.6",
-        "vinkla/facebook": "^2.0",
-        "linkedinapi/linkedin": "^1.1",
-        "socialiteproviders/foursquare": "^1.1",
-        "hownowstephen/php-foursquare": "1.2.*",
-        "jaapz/tumblr": "dev-master",
-        "dandelionmood/lastfm": "^0.6.0"
+        "monolog/monolog": "1.0.*"
     }
 }
